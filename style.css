@@ -1,25 +1,30 @@
-body {
-    background-image: url('movie feature.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100% 100%;
+.background {
+    opacity: 80%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -999;
+
 }
 
 .logo {
-    margin:auto;
+    margin: auto;
     color: red;
 
-    width:50%;
+    width: 50%;
     height: 200px;
 
-    border:20px solid red;
-    
+    border: 20px solid red;
+
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 
 }
-.button{
+
+.button {
     height: 50px;
     width: 100px;
     position: relative;
@@ -28,3 +33,36 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.island {
+    width:200px;
+    height:250px;
+    border:30px solid rgb(202, 202, 202);
+    top:100px;
+    background-color: rgb(202, 202, 202);
+
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#sign-in{
+    top:100px;
+    width:80px;
+    margin:auto;
+    position: relative;
+    /* display:flex; */
+    align-items: left;
+}
+
+#sign-up{
+    top:100px;
+    width:80px;
+    margin:auto;
+    position: relative;
+    /* display:flex; */
+    align-items: right;
+    left:13px;
+}
+
