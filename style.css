@@ -1,26 +1,36 @@
+
+
 .background {
-    opacity: 80%;
+    opacity: 85%;
     position: fixed;
     top: 0px;
     left: 0px;
     height: 100%;
     width: 100%;
     z-index: -999;
+    filter:brightness(40%)
 
 }
 
 .logo {
     margin: auto;
     color: red;
+    padding: 10px;
 
+    top:30px;
     width: 50%;
     height: 200px;
-
-    border: 20px solid red;
+/* 
+    border: 20px; */
+    /*  */
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: "Protest Strike", sans-serif;
+    font-weight:400;
+    font-size: 30vh;
 
 }
 
@@ -35,34 +45,59 @@
 }
 
 .island {
-    width:200px;
-    height:250px;
+    width:20vw;
+    height:30vw;
     border:30px solid rgb(202, 202, 202);
-    top:100px;
+    top:70px;
     background-color: rgb(202, 202, 202);
 
-    position: relative;
+    position: static;
     margin: auto;
     display: flex;
+    display:grid;
     justify-content: center;
+    grid-template-areas: 
+    "fname"
+    "lname"
+    "sign-in sign-up"
+}
+
+
+#fname{
+    margin:auto;
+    grid-area: fname;
+}
+
+#lname{
+    margin:auto;
+    grid-area: lname;
 }
 
 #sign-in{
-    top:100px;
+    grid-area: sign-in;
+    /* top:100px;
     width:80px;
     margin:auto;
     position: relative;
-    /* display:flex; */
-    align-items: left;
+    align-items: left; */
 }
 
 #sign-up{
-    top:100px;
+    grid-area: sign-up;
+    /* top:100px;
     width:80px;
     margin:auto;
     position: relative;
-    /* display:flex; */
     align-items: right;
-    left:13px;
+    left:13px; */
 }
 
+/* 
+@media (max-width: 720px) {
+    .island {
+      width: 20vh;
+      height: 30vh;
+      top: 100px;
+      margin: 0px;
+    }
+  } */
