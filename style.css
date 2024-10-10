@@ -15,14 +15,11 @@
 .logo {
     margin: auto;
     color: red;
-    padding: 10px;
+    padding: 2vh;
 
-    top:30px;
+    top:5vh;
     width: 50%;
-    height: 200px;
-/* 
-    border: 20px; */
-    /*  */
+
 
     display: flex;
     justify-content: center;
@@ -30,66 +27,62 @@
 
     font-family: "Protest Strike", sans-serif;
     font-weight:400;
-    font-size: 30vh;
+    font-size: 20vh;
 
-}
-
-.button {
-    height: 50px;
-    width: 100px;
-    position: relative;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .island {
-    width:20vw;
-    height:30vw;
+    position:relative;
+    width:20vh;
+    min-width: 160px;
+    height:30vh;
+    min-height:180px;
     border:30px solid rgb(202, 202, 202);
-    top:70px;
+    top:5vh;
     background-color: rgb(202, 202, 202);
+    margin:auto;
 
-    position: static;
-    margin: auto;
-    display: flex;
-    display:grid;
-    justify-content: center;
-    grid-template-areas: 
-    "fname"
-    "lname"
-    "sign-in sign-up"
 }
 
 
+.form{
+    display:grid;
+    justify-content: center;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    gap: 10px;
+    grid-template-areas: 
+    "first first first"
+    "fname fname fname"
+    "last last last"
+    "lname lname lname"
+    "sign-in . sign-up"
+}
+
+#first{
+    grid-area:first;
+}
+
+#last{
+    grid-area:last;
+}
+
 #fname{
-    margin:auto;
     grid-area: fname;
 }
 
 #lname{
-    margin:auto;
     grid-area: lname;
 }
 
 #sign-in{
     grid-area: sign-in;
-    /* top:100px;
-    width:80px;
-    margin:auto;
-    position: relative;
-    align-items: left; */
 }
 
 #sign-up{
     grid-area: sign-up;
-    /* top:100px;
-    width:80px;
-    margin:auto;
-    position: relative;
-    align-items: right;
-    left:13px; */
+
 }
 
 /* 
