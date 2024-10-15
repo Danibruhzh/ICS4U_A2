@@ -98,3 +98,34 @@
     bottom: 0;
     left: 0;
 }
+
+.home{
+    margin:0;
+    position:relative;
+    height:20px;
+    width: 50px;
+    background-color: rgb(159, 159, 226);
+    border: Solid rgb(159, 159, 226);
+    border-radius: 10%;
+    align-items: center;
+}
+
+
+
+/*fix the home button*/
+#home-button{
+    position:absolute;
+    width:fit-content;
+    height:100%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    padding-inline:6px;
+}
+
+.home:hover{
+    background-color: aliceblue;
+    border-color: aliceblue;
+}
