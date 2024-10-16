@@ -27,8 +27,140 @@
     font-size: 20vh;
 
 }
+.sign-in {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 430px;
+    padding: 60px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    transform: translate(-50%, -50%);
+}
 
-.island {
+.sign-in h2{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.sign-in form{
+    margin: 25px 0 65px;
+}
+
+form .info {
+    position: relative;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.info input {
+    height: 100%;
+    width: 100%;
+    background: #333;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 20px;
+}
+
+.info input:is(:focus, :valid) {
+    padding: 16px 20px 0;
+    background: #444;
+
+}
+
+.info label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    transition: all 0.1s ease;
+}
+
+.info input:is(:focus, :valid) ~ label{
+    transform: translateY(-130%);
+    font-size: 0.75rem;
+}
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 25px 0 10px;
+    background: rgb(0, 25, 181);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background: rgb(0, 16, 122);
+}
+
+form .help {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .remember {
+    display: flex;
+}
+
+form .remember input {
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+}
+
+form .help :where(label, a) {
+    font-size: 0.9rem;
+}
+
+.sign-in :where(label, p, a) {
+    color: #b3b3b3;
+}
+
+.sign-in p a {
+    color: #fff;
+}
+
+.sign-in a {
+    text-decoration: none;
+}
+
+.sign-in a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 740px) {
+    body::before {
+        display: none;
+    }
+    nav, .sign-in {
+        padding: 20px;
+    }
+    nav a img {
+        width: 140px;
+    }
+    .sign-in {
+        top: 43%;
+        width: 100%;
+    }
+    .sign-in form {
+        margin: 25px 0 40px;
+    }
+}
+
+
+/* .island {
     position: relative;
     width: 20vh;
     min-width: 160px;
@@ -97,35 +229,26 @@
     position: absolute;
     bottom: 0;
     left: 0;
-}
-
+} */
 .home{
     margin:0;
+    height:25px;
+    width: 55px;
+    margin:0;
     position:relative;
-    height:20px;
-    width: 50px;
+    
     background-color: rgb(159, 159, 226);
     border: Solid rgb(159, 159, 226);
     border-radius: 10%;
-    align-items: center;
-}
+    padding:0;
 
-
-
-/*fix the home button*/
-#home-button{
-    position:absolute;
-    width:fit-content;
-    height:100%;
-    margin:auto;
-    display:flex;
     justify-content: center;
-    align-content: center;
-    text-decoration: none;
-    padding-inline:6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 .home:hover{
-    background-color: aliceblue;
-    border-color: aliceblue;
+    background-color: rgb(68, 140, 202);
+    border-color: rgb(53, 132, 201);
+    cursor: pointer;
 }

@@ -1,5 +1,5 @@
-.sign-in{
+#sign-in{
     width:100px;
-    height:100px;
+    height:60px;
+    display: flex;
 }
-/* fix the signin button*/
