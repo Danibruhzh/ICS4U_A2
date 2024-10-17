@@ -13,47 +13,52 @@
     margin: auto;
     color: red;
     padding: 2vh;
+    box-sizing: border-box;
 
-    top: 5vh;
     width: 50%;
 
+    top: 14vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
 
     font-family: "Protest Strike", sans-serif;
-    font-weight: 400;
-    font-size: 20vh;
+    font-weight: 200;
+    font-size: 15vh;
 
 }
-.sign-in {
-    position: absolute;
+
+.island {
+    position: relative;
     left: 50%;
-    top: 50%;
-    width: 430px;
-    padding: 60px;
+    width: 350px;
+    padding: 30px;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.75);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, +20vh);
 }
 
-.sign-in h2{
+.island h2 {
     color: #fff;
+    margin:auto;
     font-size: 2rem;
 }
 
-.sign-in form{
+.island form {
     margin: 25px 0 65px;
 }
 
-form .info {
+.field {
     position: relative;
     height: 50px;
     margin-bottom: 16px;
 }
 
-.info input {
+.field input {
     height: 100%;
     width: 100%;
     background: #333;
@@ -62,16 +67,18 @@ form .info {
     border-radius: 4px;
     color: #fff;
     font-size: 1rem;
-    padding: 0 20px;
 }
 
-.info input:is(:focus, :valid) {
-    padding: 16px 20px 0;
+.field input:is(:focus, :valid) {
+    padding-top: 10px;
+    text-align: -50px;
+    text-indent:18px;
     background: #444;
+    box-sizing: border-box;
 
 }
 
-.info label{
+.field label {
     position: absolute;
     left: 20px;
     top: 50%;
@@ -82,7 +89,7 @@ form .info {
     transition: all 0.1s ease;
 }
 
-.info input:is(:focus, :valid) ~ label{
+.field input:is(:focus, :valid)~label {
     transform: translateY(-130%);
     font-size: 0.75rem;
 }
@@ -124,19 +131,19 @@ form .help :where(label, a) {
     font-size: 0.9rem;
 }
 
-.sign-in :where(label, p, a) {
+.island :where(label, p, a) {
     color: #b3b3b3;
 }
 
-.sign-in p a {
+.island p a {
     color: #fff;
 }
 
-.sign-in a {
+.island a {
     text-decoration: none;
 }
 
-.sign-in a:hover {
+.island a:hover {
     text-decoration: underline;
 }
 
@@ -144,17 +151,23 @@ form .help :where(label, a) {
     body::before {
         display: none;
     }
-    nav, .sign-in {
-        padding: 20px;
+
+    nav,
+    .island {
+        width:100%;
+        height:100%;
     }
+
     nav a img {
         width: 140px;
     }
-    .sign-in {
+
+    .island {
         top: 43%;
-        width: 100%;
+        width: 350px;
     }
-    .sign-in form {
+
+    .island form {
         margin: 25px 0 40px;
     }
 }
@@ -187,7 +200,7 @@ form .help :where(label, a) {
         "fname fname fname"
         "last last last"
         "lname lname lname"
-        " . sign-in ."
+        " . island ."
 }
 
 #first {
@@ -208,14 +221,14 @@ form .help :where(label, a) {
     grid-area: lname;
 }
 
-.sign-in {
-    grid-area: sign-in;
+.island {
+    grid-area: island;
     height:20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
-.sign-in:hover{
+.island:hover{
     background-color: rgb(97, 125, 202);
 }
 
@@ -230,24 +243,24 @@ form .help :where(label, a) {
     bottom: 0;
     left: 0;
 } */
-.home{
-    margin:0;
-    height:25px;
+.home {
+    margin: 0;
+    height: 25px;
     width: 55px;
-    margin:0;
-    position:relative;
-    
+    margin: 0;
+    position: relative;
+
     background-color: rgb(159, 159, 226);
     border: Solid rgb(159, 159, 226);
     border-radius: 10%;
-    padding:0;
+    padding: 0;
 
     justify-content: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
-.home:hover{
+.home:hover {
     background-color: rgb(68, 140, 202);
     border-color: rgb(53, 132, 201);
     cursor: pointer;

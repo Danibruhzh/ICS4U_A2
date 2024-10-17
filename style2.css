@@ -1,5 +1,53 @@
+.header{
+    width:100%;
+    height:50px;
+    background-color: black;
+    left:0;
+    top:0;
+    position:fixed;
+    z-index: 999;
+
+    display:flex;
+    align-items: center;
+    padding:0 50px;
+}
+
+.logo{
+    font-size:20px;
+    display:flex;
+    margin-right:100px;
+    padding:none;
+    color:white;
+    width:min-content;
+}
+
+.menu-list{
+    color:white;
+    flex:6;
+    display:flex;
+    list-style:none;
+    padding:0;
+}
+.menu-list-item{
+    margin-inline:30px;
+}
+
+.search {
+    display:flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+    height: 30px;
+    padding: 6px;
+    border-radius: 30px;
+    background: #c8c7c7;
+    transition: background 0.25s;
+}
+
+
+
 #sign-in{
-    width:100px;
-    height:60px;
+    flex:1;
     display: flex;
 }
