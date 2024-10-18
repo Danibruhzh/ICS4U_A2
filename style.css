@@ -1,3 +1,8 @@
+*{
+    font-family: "Protest Strike", sans-serif;
+}
+
+
 .background {
     opacity: 85%;
     position: fixed;
@@ -11,7 +16,7 @@
 
 .logo {
     margin: auto;
-    color: red;
+    color: crimson;
     padding: 2vh;
     box-sizing: border-box;
 
@@ -54,7 +59,7 @@
 
 .field {
     position: relative;
-    height: 50px;
+    height: 55px;
     margin-bottom: 16px;
 }
 
@@ -67,6 +72,7 @@
     border-radius: 4px;
     color: #fff;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 .field input:is(:focus, :valid) {

@@ -1,18 +1,17 @@
-.header{
-    width:100%;
-    height:50px;
-    background-color: black;
-    left:0;
-    top:0;
-    position:fixed;
-    z-index: 999;
-
-    display:flex;
-    align-items: center;
-    padding:0 50px;
+body {
+    margin: 0px;
 }
 
-.header-container{
+.header {
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    font-family: "Protest Strike", sans-serif;
+    left: 0;
+    top: 0;
+}
+
+.header-container {
     display: flex;
     align-items: center;
     padding: 0 50px;
@@ -20,47 +19,219 @@
     color: white;
 }
 
-.logo-container{
-    flex:1;
-}
-.logo{
-    font-size:20px;
-    display:flex;
-    
+.logo-container {
+    margin-right: auto;
 }
 
-.menu-list{
-    flex:6;
-    display:flex;
-    list-style:none;
-    padding:0;
+.logo {
+    font-size: 20px;
+    display: flex;
+    color:crimson;
 }
-.menu-list-item{
-    margin-inline:30px;
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list-item {
+    margin-inline: 20px;
+    cursor: pointer;
+}
+
+
+.active {
+    text-decoration: underline;
 }
 
 .search {
-    display:flex;
+    display: flex;
     margin: 15px;
     align-items: center;
     width: max-content;
     height: 30px;
-    padding: 6px;
+    padding: 10px;
     border-radius: 30px;
     background: #c8c7c7;
     transition: background 0.25s;
+    font-family: "Protest Strike", sans-serif;
+    justify-content: center;
 }
 
-
-
-#sign-in{
+.sign-in-button-container {
     display: flex;
-    width: 60px;
-    height: 25px;
-    border-radius: 30px;
     align-items: center;
-    justify-content: flex-end;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.sign-in-button {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     position: relative;
-    right: -15px;
+}
+
+.sign-in {
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all 0.1 ease-in-out;
+    font-family: "Protest Strike", sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+    .menu-container {
+        display: none;
+    }
+}
+
+.container {
+    background-color: #111111;
+    min-height: calc(100vh-60px);
+    color: white;
+
+}
+
+.content-container {
+
+}
+
+.featured-content {
+    height: 60vh;
+    padding:100px;
+}
+
+.featured-title{
+    width: 600px;
+}
+
+.featured-desc{
+    width:500px;
+    color:lightgray;
+    margin:30px 0;
+    
+}
+
+.featured-button{
+    background-color: crimson;
+    color:white;
+    padding:10px 20px;
+    border-radius:10px;
+    outline:none;
+    border:none;
+    font-weight: bold;
+}
+
+.movie-list-container{
+    padding:20px;
+
+}
+
+.movie-list-title{
+    position: relative;
+    left:20px;
+}
+
+.movie-list-wrapper{
+    position: relative;
+}
+
+.movie-list-item-image{
+    width:400px;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.movie-list{
+    display:flex;
+    align-items: center;
+    height:300px;
+}
+
+.movie-list-item{
+    margin:25px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-image{
+    transform: scale(1.15);
+    margin:0 25px;
+    opacity:0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title{
+    opacity: 1;
+}
+
+.movie-list-item:hover .movie-list-item-desc{
+    opacity: 1;
+}
+
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+
+.movie-list-item-title{
+    padding:0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top:10%;
+    left:20px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.movie-list-item-desc{
+    padding:10px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top:20%;
+    left:20px;
+    width:350px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.movie-list-item-button{
+    padding:10px;
+    background-color: crimson;
+    color:white;
+    border-radius:10px;
+    width:70px;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    bottom:100px;
+    left:30px;
+    box-sizing: border-box;
+
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow{
+    font-size: 100px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    color: lightgray;
+    opacity: 0.3;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow:hover {
+    opacity: 1;
 }

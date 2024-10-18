@@ -6,48 +6,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freakflix</title>
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
-    <div class="header-container">
-        <div class="header">
+    <div class="header">
+        <div class="header-container">
             <div class="logo-container">
                 <div class="logo">
                     <h1>Freakflix</h1>
                 </div>
             </div>
-                <div class="menu-container">
-                    <div class="menu">
-                        <ul class="menu-list">
-                            <li class="menu-list-item">Home</li>
-                            <li class="menu-list-item">Movies</li>
-                            <li class="menu-list-item">Shows</li>
-                            <li class="menu-list-item">Trending</li>
-                        </ul>
-                    </div>
+            <div class="menu-container">
+                <div class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-list-item active">Home</li>
+                        <li class="menu-list-item">Movies</li>
+                        <li class="menu-list-item">Shows</li>
+                        <li class="menu-list-item">Trending</li>
+                    </ul>
                 </div>
-                <div class="search-bar-container">
-                    <div class="search-bar">
-                        <form>
-                            <input type="search" class="search" placeholder="Search Movies or Shows">
-                            <!-- search icon -->
-                        </form>
-                    </div>
+            </div>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <form>
+                        <input type="search" class="search" placeholder="Search Movies or Shows">
+                        <!-- search icon -->
+                    </form>
                 </div>
+            </div>
 
             <div class="sign-in-button-container">
                 <div class="sign-in-button">
                     <form action="index.html">
-                        <button id="sign-in" type="submit">Sign-in</button>
+                        <button class="sign-in" type="submit">Sign-in</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
+<div class="container">
+    <div class="content-container">
+        <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #111111), url('images/walle.png'); background-size: cover;">
+            <img class="featured-title" src="images/walle title.png" alt="Wall-E Title Image">
+            <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, perspiciatis.</p>
+            <button class="featured-button">WATCH</button>
+        </div>
 
+        <div class="movie-list-container">
+            <h1 class="movie-list-title"> POPULAR</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/the chosen.jpg" alt="The Chosen">
+                        <span class="movie-list-item-title">The Chosen</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/breaking bad.jpg" alt="Breaking Bad">
+                        <span class="movie-list-item-title">Breaking Bad</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/tangled.jpg" alt="Tangled">
+                        <span class="movie-list-item-title">Tangled</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/spiderman.jpg" alt="Spiderman">
+                        <span class="movie-list-item-title">Across the Spider-Verse</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/infinity war.jpg" alt="Infinity War">
+                        <span class="movie-list-item-title">Avengers: Infinity War</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                </div>
+                
+                <i class="fa-solid fa-arrow-right arrow"></i>
+
+            </div>
+
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title"> CHRISTOPHER NOLAN</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/interstellar.png" alt="interstellar">
+                        <span class="movie-list-item-title">Interstellar</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/oppenheimer.jpg" alt="Oppenheimer">
+                        <span class="movie-list-item-title">Oppenheimer</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/the dark knight.jpg" alt="The Dark Knight">
+                        <span class="movie-list-item-title">Batman: The Dark Knight</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/inception.jpg" alt="Inception">
+                        <span class="movie-list-item-title">Inception</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/memento.jpg" alt="Memento">
+                        <span class="movie-list-item-title">Memento</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/tenet.jpg" alt="Tenet">
+                        <span class="movie-list-item-title">Tenet</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                </div>
+                
+                <i class="fa-solid fa-arrow-right arrow"></i>
+
+            </div>
+
+        </div>
+
+        <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #111111), url('images/joker.jpg'); background-size: cover;">
+            <img class="featured-title" src="images/joker title.png" alt="Joker Title Image">
+            <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, perspiciatis.</p>
+            <button class="featured-button">WATCH</button>
+        </div>
+
+        <div class="movie-list-container">
+            <h1 class="movie-list-title"> NEW RELEASES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                </div>
+                
+                <i class="fa-solid fa-arrow-right arrow"></i>
+
+            </div>
+
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title"> NEW RELEASES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-image" src="images/arcane.jpg" alt="Arcane">
+                        <span class="movie-list-item-title">Arcane</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, eligendi.</p>
+                        <button class="movie-list-item-button">Watch</button>
+                    </div>
+                </div>
+                
+                <i class="fa-solid fa-arrow-right arrow"></i>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 
