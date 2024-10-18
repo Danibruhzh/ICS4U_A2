@@ -142,6 +142,7 @@ body {
 
 .movie-list-wrapper{
     position: relative;
+    overflow: hidden;
 }
 
 .movie-list-item-image{
@@ -155,6 +156,8 @@ body {
     display:flex;
     align-items: center;
     height:300px;
+    transform: translateX(0);
+    /* transition: all 0.3 ease-in-out; */
 }
 
 .movie-list-item{
