@@ -150,6 +150,8 @@ body {
     height: 250px;
     object-fit: cover;
     transition: all 0.3s ease-in-out;
+    border:lightgray 1px solid;
+    border-radius: 10px;
 }
 
 .movie-list{
@@ -157,11 +159,11 @@ body {
     align-items: center;
     height:300px;
     transform: translateX(0);
-    /* transition: all 0.3 ease-in-out; */
+    transition: all 0.3s ease-in-out;
 }
 
 .movie-list-item{
-    margin:25px;
+    margin: 19px;
     position: relative;
 }
 
