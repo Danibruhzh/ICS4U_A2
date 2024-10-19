@@ -1,12 +1,16 @@
 body {
     margin: 0px;
+    font-family: "Protest Strike", sans-serif;
+}
+
+button{
+    font-family: "Protest Strike", sans-serif;
 }
 
 .header {
     width: 100%;
     height: 55px;
     background-color: black;
-    font-family: "Protest Strike", sans-serif;
     left: 0;
     top: 0;
 }
@@ -55,7 +59,6 @@ body {
     border-radius: 30px;
     background: #c8c7c7;
     transition: background 0.25s;
-    font-family: "Protest Strike", sans-serif;
     justify-content: center;
 }
 
@@ -84,7 +87,6 @@ body {
     outline: none;
     border: none;
     transition: all 0.1 ease-in-out;
-    font-family: "Protest Strike", sans-serif;
 }
 
 @media only screen and (max-width: 900px) {
@@ -97,10 +99,6 @@ body {
     background-color: #111111;
     min-height: calc(100vh-60px);
     color: white;
-
-}
-
-.content-container {
 
 }
 
@@ -117,7 +115,7 @@ body {
     width:500px;
     color:lightgray;
     margin:30px 0;
-    
+    font-size: large;
 }
 
 .featured-button{
@@ -128,16 +126,22 @@ body {
     outline:none;
     border:none;
     font-weight: bold;
+    cursor:pointer;
+}
+
+.featured-button.rent{
+    margin:0 20px;
+    padding-inline:24px;
 }
 
 .movie-list-container{
     padding:20px;
-
 }
 
 .movie-list-title{
     position: relative;
     left:20px;
+    margin-bottom:30px;
 }
 
 .movie-list-wrapper{
@@ -165,7 +169,16 @@ body {
 .movie-list-item{
     margin: 19px;
     position: relative;
+    box-sizing: border-box;
 }
+
+
+/* @media only screen and (max-width: 1340px) {
+    .movie-list{
+        transform: scale(0.8);
+    }
+} */
+
 
 .movie-list-item:hover .movie-list-item-image{
     transform: scale(1.15);
@@ -188,7 +201,6 @@ body {
 .movie-list-item-title{
     padding:0 10px;
     font-size: 32px;
-    font-weight: bold;
     position: absolute;
     top:10%;
     left:20px;
@@ -199,11 +211,10 @@ body {
 .movie-list-item-desc{
     padding:10px;
     font-size: 14px;
-    font-weight: bold;
     position: absolute;
     top:20%;
     left:20px;
-    width:350px;
+    width:360px;
     opacity: 0;
     transition: all 0.3s ease-in-out;
 }
@@ -218,12 +229,16 @@ body {
     border:none;
     cursor: pointer;
     position: absolute;
-    bottom:100px;
+    bottom:50px;
     left:30px;
     box-sizing: border-box;
 
     opacity: 0;
     transition: all 0.3s ease-in-out;
+}
+
+.movie-list-item-button.rent{
+    left: 120px;
 }
 
 .arrow{
@@ -239,4 +254,58 @@ body {
 
 .arrow:hover {
     opacity: 1;
+}
+
+
+
+.footer{
+    background-color: #2c2c2c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer-container{
+    align-items: center;
+    display: flex;
+    padding:0 70px 0 70px;
+
+}
+
+.footer-list{
+    margin:15px 100px 15px 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    align-items: center;
+    color:white;
+}
+
+.footer-list li{
+    cursor: pointer;
+    padding:0;
+    border:0;
+    width:fit-content;
+    list-style:none;
+    margin:15px 0;
+}
+
+.footer-logo{
+    justify-content:center;
+    align-content:center;
+    display: flex;
+    color:crimson;
+    font-size:40px;
+}
+@media only screen and (max-width: 1270px) {
+    .footer-logo{
+        display:none;
+    }
+}
+@media only screen and (max-width: 1085px) {
+    .footer-list{
+        margin: 15px 30px 15px 30px;
+    }
+    .footer-container{
+        padding-inline: 30px;
+    }
 }

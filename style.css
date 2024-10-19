@@ -110,13 +110,13 @@ form button {
     font-weight: 500;
     border-radius: 4px;
     margin: 25px 0 10px;
-    background: rgb(0, 25, 181);
+    background: crimson;
     cursor: pointer;
     transition: 0.1s ease;
 }
 
 form button:hover {
-    background: rgb(0, 16, 122);
+    background: rgb(163, 32, 58);
 }
 
 form .help {
@@ -177,78 +177,6 @@ form .help :where(label, a) {
         margin: 25px 0 40px;
     }
 }
-
-
-/* .island {
-    position: relative;
-    width: 20vh;
-    min-width: 160px;
-    height: 30vh;
-    min-height: 200px;
-    border: 20px solid rgb(124, 124, 168);
-    border-radius: 2%;
-    top: 5vh;
-    background-color:rgb(124, 124, 168);
-    margin: auto;
-
-}
-
-
-.form {
-    display: grid;
-    justify-content: center;
-
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
-    grid-template-areas:
-        "first first first"
-        "fname fname fname"
-        "last last last"
-        "lname lname lname"
-        " . island ."
-}
-
-#first {
-    grid-area: first;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#last {
-    grid-area: last;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#fname {
-    grid-area: fname;
-}
-
-#lname {
-    grid-area: lname;
-}
-
-.island {
-    grid-area: island;
-    height:20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
-
-.island:hover{
-    background-color: rgb(97, 125, 202);
-}
-
-.sign-up:hover {
-    text-decoration: underline;
-    cursor:pointer;
-    color: blue;
-}
-
-.help{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
 .home {
     margin: 0;
     height: 25px;
@@ -256,8 +184,8 @@ form .help :where(label, a) {
     margin: 0;
     position: relative;
 
-    background-color: rgb(159, 159, 226);
-    border: Solid rgb(159, 159, 226);
+    background-color: crimson;
+    border: Solid crimson;
     border-radius: 10%;
     padding: 0;
 
