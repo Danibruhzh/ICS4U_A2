@@ -7,16 +7,16 @@ arrow.forEach((arrow, i) =>{
     const itemNum = movieList[i].querySelectorAll(".movie-list-item-image").length;
     let clickCount = 0;
 
-    const barLength = 440 * itemNum;
-
-    // need to fix the bar resizing
+   
 
     arrow.addEventListener("click", () => {
+        console.log(window.innerWidth);
         clickCount++;
 
+        let ratio = Math.floor(window.innerWidth/400);
 
 
-        if (itemNum - (3 + clickCount) >= 0){
+        if (itemNum - (3 + clickCount) + (3 - ratio) >= 0){
             movieList[i].style.transform = `translateX(${
                 movieList[i].computedStyleMap().get("transform")[0].x.value-440}px)`;
             
