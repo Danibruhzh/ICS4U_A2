@@ -130,6 +130,11 @@ button {
     border: none;
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.featured-button:hover {
+    background-color: darkred;
 }
 
 .featured-button.rent {
@@ -236,6 +241,10 @@ button {
 
 .movie-list-item-button.rent {
     left: 120px;
+}
+
+.movie-list-item-button:hover {
+    background-color: darkred;
 }
 
 .arrow {

@@ -13,8 +13,8 @@ arrow.forEach((arrow, i) =>{
         console.log(window.innerWidth);
         clickCount++;
 
-        let ratio = Math.floor(window.innerWidth/400);
-
+        let ratio = Math.floor(((window.innerWidth)-160)/400);
+        console.log(ratio);
 
         if (itemNum - (3 + clickCount) + (3 - ratio) >= 0){
             movieList[i].style.transform = `translateX(${
