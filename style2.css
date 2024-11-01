@@ -254,15 +254,12 @@ button {
     right: 0px;
     color: lightgray;
     opacity: 0.3;
-
     transition: all 0.3s ease-in-out;
 }
 
 .arrow:hover {
     opacity: 1;
 }
-
-
 
 .footer {
     background-color: #2c2c2c;
@@ -302,12 +299,16 @@ button {
     font-size: 40px;
 }
 
+@media only screen and (max-width: 1380px) {
+    .footer-logo {
+        display: none;
+    }
+}
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1100px) {
     .featured-title{
         height:160px;
         width:480px;
-        display: flex;
     }
     .featured-content{
         padding-inline:60px;
@@ -315,17 +316,6 @@ button {
     .featured-desc{
         font-size:medium;
     }
-}
-
-
-
-@media only screen and (max-width: 1380px) {
-    .footer-logo {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 1085px) {
     .footer-list li{
         margin-right: 20px;
     }
@@ -342,7 +332,7 @@ button {
         margin-inline: 20px;
     }
     .footer-container {
-        padding-inline: 50px;
+        padding-inline: 20px;
     }
     
 }
@@ -375,7 +365,6 @@ button {
         padding-top:5px;
         margin:7px 0;
     }
-    .footer-list 
     .footer-container{
         height:150px;
     }

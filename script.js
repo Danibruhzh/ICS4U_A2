@@ -13,7 +13,7 @@ arrow.forEach((arrow, i) =>{
         console.log(window.innerWidth);
         clickCount++;
 
-        let ratio = Math.floor(((window.innerWidth)-160)/400);
+        let ratio = Math.floor(((window.innerWidth)-60)/440);
         console.log(ratio);
 
         if (itemNum - (3 + clickCount) + (3 - ratio) >= 0){
